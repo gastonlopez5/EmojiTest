@@ -31,16 +31,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+//                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                 LayoutInflater inflater = getLayoutInflater();
                 View view = inflater.inflate(R.layout.layout_emoji, null);
-                builder.setView(view);
-
-                AlertDialog dialog = builder.create();
-                dialog.show();
+//                builder.setView(view);
+//
+//                AlertDialog dialog = builder.create();
+//                dialog.show();
 
                 EmojiPopup popup = EmojiPopup.Builder.fromRootView(view.findViewById(R.id.root_view)).build(et_emoji);
-                popup.toggle();
+                popup.show();
+
+
+
+
 
 //                EmojiTextView emojiTextView = (EmojiTextView) LayoutInflater
 //                        .from(v.getContext())
