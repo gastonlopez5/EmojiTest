@@ -40,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
 //                dialog.show();
 
                 EmojiPopup popup = EmojiPopup.Builder.fromRootView(view.findViewById(R.id.root_view)).build(et_emoji);
-                popup.show();
+                popup.toggle();
+                popup.dismiss();
 
 
 
